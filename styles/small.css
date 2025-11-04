@@ -12,7 +12,10 @@
     margin: 0;
 }
 
-/*HEADER CONFIGURATION*/
+
+/*---------------------------------------*/
+/*        HEADER CONFIGURATION           */
+/*---------------------------------------*/
 
 header{
     display: grid;
@@ -49,7 +52,7 @@ header img{
     content: "\2630";
 }
 
-/* TOGGLE NAVIGATION */
+/*-----------TOGGLE NAVIGATION------------*/
 .navigation.show{
     display: flex;
     flex-direction: column;
@@ -89,7 +92,10 @@ header img{
     display: block;
 }
 
-/* MAIN  CONFIGURATION*/
+
+/*-------------------------------------*/
+/*          MAIN  CONFIGURATION        */
+/*-------------------------------------*/
 main{
     display: flex;
     flex-direction: column;
@@ -118,18 +124,53 @@ section h2{
     justify-content: center;
 }
 
+/*---------COURSES LIST---------*/
+
+#courses p{
+    padding: 1rem;
+}
 #coursesBtn{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+#coursesBtn button{
+    background-color: var(--primary);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    padding: 0.5rem;
+    min-width: 100px;
+
+}
+
 #courseList{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-/* FOOTER CONFIGURATION */
+#courseList .course{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.completed{
+    background-color: #fff;
+}
+
+.completed::before{
+    content: "\2713";
+}
+
+
+/*----------------------------------------/
+/          FOOTER CONFIGURATION           /
+/----------------------------------------*/
 footer{
     border-top: 2px solid var(--primary);
     text-align: center;
@@ -146,5 +187,4 @@ footer{
     width: 44px;
     margin: 1rem;
     background: none;
-
 }

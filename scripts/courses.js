@@ -1,3 +1,6 @@
+/////////////////////////////////////
+//            COURSES              //
+/////////////////////////////////////
 const courses = [
     {
         subject: 'CSE',
@@ -78,6 +81,11 @@ const courses = [
     }
 ]
 
+
+
+/////////////////////////////////////
+//          CREATE LIST            //
+/////////////////////////////////////
 const courseList = document.querySelector("#courseList");
 
 function createCourses(filteredArray) {
@@ -95,22 +103,38 @@ function createCourses(filteredArray) {
     });
 }
 
-createCourses(courses);
 
+////////////////////////////////////////
+//          SET UP BUTTONS            //
+////////////////////////////////////////
+
+const creditSpan = document.querySelector("#credits");
 const allBtn = document.querySelector("#all");
 const cseBtn = document.querySelector("#cse");
 const wddBtn = document.querySelector("#wdd");
 
+createCourses(courses);
+    let credit = courses.reduce((counter, element) => counter + element.credits, 0);
+    creditSpan.innerHTML = credit;
+
+
 allBtn.addEventListener("click", () => {
     createCourses(courses);
+    let credit = courses.reduce((counter, element) => counter + element.credits, 0);
+    creditSpan.innerHTML = credit;
 })
 
 cseBtn.addEventListener("click", () => {
     let filteredCourses = courses.filter(course => course.subject === "CSE");
     createCourses(filteredCourses);
+    let credit = filteredCourses.reduce((counter, element) => counter + element.credits, 0);
+    creditSpan.innerHTML = credit;
 })
 
 wddBtn.addEventListener("click", () => {
     let filteredCourses = courses.filter(course => course.subject === "WDD");
     createCourses(filteredCourses);
+    let credit = filteredCourses.reduce((counter, element) => counter + element.credits, 0);
+    creditSpan.innerHTML = credit;
 })
+
