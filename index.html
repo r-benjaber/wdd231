@@ -11,6 +11,15 @@
         content="This is the WDD231 Course Home Page where's a bit of information about me, the classes that I took and also links to other pages that I created.">
     <meta name="author" content="Rodrigo Benjamin Bernal">
 
+    <!-- Social Media Meta Tags -->
+    <meta name="og:title" content="WDD231 Course Home Page">
+    <meta name="og:description"
+        content="This page contains the main links to project pages created in this course. It also have information about me and references to my social media.">
+    <meta name="og:url" content="https://r-benjaber.github.io/wdd231">
+    <meta name="locale" content="en_US">
+    <meta name="image" content="https://r-benjaber.github.io/wdd231/images/rb-logo.svg">
+
+
     <!-- Linking the font that I will use -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,14 +45,14 @@
         <span>Rodrigo Bernal's Page</span>
         <button class="hamburger"></button>
     </header>
-        <!-- Navigation Menu -->
-        <nav class="navigation">
-            <ul>
-                <li><a href="#" class="current">Home</a></li>
-                <li><a href="#">Chamber Project</a></li>
-                <li><a href="#">Final Project</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation Menu -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
 
 
     <main>
@@ -52,7 +61,8 @@
         <!-- First Section that is a card that contains information about me. -->
         <section id="about">
             <h2>About Me</h2>
-            <p class="content">My name is Rodrigo Benjamín Bernal Romero, I'm a 25yo Software Development student that is currently
+            <p class="content">My name is Rodrigo Benjamín Bernal Romero, I'm a 25yo Software Development student that
+                is currently
                 finishing the first certificate of the career. I've made quite some projects for this careers as an
                 Airport Traffic Manager app in Python, a Rafting Website, a Memorial Park Website, and a lot of small
                 projects. <br> Right now I'm working as a Memorial Park administrative, and do a lot of work to serve
@@ -76,8 +86,9 @@
         <section id="courses">
             <h2>Web Certificate Courses</h2>
             <div class="content">
-                
-                <div id="coursesBtn"><button id="all">All</button><button id="cse">CSE</button><button id="wdd">WDD</button></div>
+
+                <div id="coursesBtn"><button id="all">All</button><button id="cse">CSE</button><button
+                        id="wdd">WDD</button></div>
                 <p>Listed courses for the amount of credits of <span id="credits"></span></p>
 
                 <!-- This part will be completed using JavaScript. -->
@@ -89,7 +100,10 @@
 
     <!--- Footer, most of it will be filled up using JavaScript. -->
     <footer>
-        <div class="footerNav"><a href="https://www.linkedin.com/in/benjam%C3%ADn-bernal-b64b49238/"><img src="images/linkedin.svg" alt="LinkedIn Link"></a> <a href="https://github.com/r-benjaber"><img src="images/github.svg" alt="GitHub Link"></a> <a href="https://www.instagram.com/rbenjaber/"><img src="images/instagram.svg" alt="Instagram link"></a></div>
+        <div class="footerNav"><a href="https://www.linkedin.com/in/benjam%C3%ADn-bernal-b64b49238/"><img
+                    src="images/linkedin.svg" alt="LinkedIn Link"></a> <a href="https://github.com/r-benjaber"><img
+                    src="images/github.svg" alt="GitHub Link"></a> <a href="https://www.instagram.com/rbenjaber/"><img
+                    src="images/instagram.svg" alt="Instagram link"></a></div>
         <p>©<span id="currentYear"></span> - Rodrigo Benjamin Bernal - Central, Paraguay</p>
         <p id="lastModified"></p>
     </footer>
