@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en_US">
 <head>
 
     <!-- Page Meta Setup -->
@@ -19,8 +19,8 @@
     <meta name="og:url" content="https://r-benjaber.github.io/wdd231/chamber/directory.html">
 
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <!-- Font Setup -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,20 +28,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Page Scripts -->
-    <script src="../scripts/getdates.js" defer></script>
-    <script src="" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
 </head>
 
 <body>
     <header>
+        <div class="inheader">
+            <img src="images/logo.svg" alt="Logo of the chamber" width="1" height="1" class="logo">
+            <p>Villa Elisa's Chamber of Commerce</p>
+            <button class="burger"></button>
+        </div>
         
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="current">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>  
+        </nav>
     </header>
-    <main>
 
+    <main>
+            <div id="displayButtons"> <button id="gridBtn"><img src="images/grid.svg" alt="Grid Button" width="24"></button> <button id="listBtn"><img src="images/list-ul.svg" alt="List Button" width="24"></button></div>
+            <h2 class="mainSubheading">Companies list</h2>
+        <section id="businessCards">
+
+        </section>
     </main>
     <footer>
-        
+        <p class="info">
+            <strong>Villa Elisa's Chamber of Commerce</strong> <br>
+            Virgen del Carmen 247 <br>
+                c/ Von Poleski <br>
+            villaelisachamber@mef.gov.py
+            +595 21 112 8000
+        </p>
+        <div class="medialinks"><a href="https://www.youtube.com"><img src="images/youtube.svg" alt="youtube logo"></a><a href="https://www.x.com"><img src="images/twitter.svg" alt="twitter logo"></a><a href="https://linkedin.com"><img src="images/linkedin.svg" alt="linkedin logo"></a></div>
+        <p>©<span id="currentYear"></span> - Rodrigo Benjamin Bernal - Central, Paraguay</p>
+        <p id="lastModified"></p>
     </footer>    
 </body>
 </html>

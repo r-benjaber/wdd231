@@ -8,6 +8,7 @@ async function getProhetData() {
     displayProphets(data.prophets);
 }
 
+
 const displayProphets = (prophets) => {
     prophets.forEach(prophet => {
         //create prophet card
