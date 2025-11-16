@@ -52,4 +52,14 @@
         object-fit: contain;
     }
 
+
+    /******************************/
+    /*FOOTER***********************/
+    /******************************/
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
