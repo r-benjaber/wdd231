@@ -63,3 +63,14 @@
         justify-content: space-around;
     }
 }
+
+/******************************/
+/********  DISCOVER  **********/
+/******************************/
+
+@media screen and (min-width: 64rem) {
+    #placesCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

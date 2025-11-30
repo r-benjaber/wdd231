@@ -161,3 +161,56 @@ footer a > img {
     min-width: 44px;
     margin: 0.5rem;
 }
+
+
+
+/********************/
+/****  DISCOVER  ****/
+/********************/
+
+.placeCard {
+    border: 2px solid var(--primary);
+    margin: 1rem;
+    border-radius: 15px;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "phot"
+    "desc"
+    "addr"
+    "butn";
+    text-align: center;
+    gap: 0.5rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.placeCard > h2 {
+    grid-area: name;
+}
+
+.placeCard > figure {
+    grid-area: phot;
+    padding: 0;
+    margin: 0;
+}
+
+.placeCard > p {
+    grid-area: desc;
+}   
+
+.placeCard > address {
+    grid-area: addr;
+}
+
+.placeCard > button{
+    grid-area: butn;
+    width: 100px;
+    margin: 10px auto;
+}
+
+.placeCard img{
+    margin: 0;
+}
