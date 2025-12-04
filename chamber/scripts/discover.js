@@ -32,3 +32,26 @@ places.forEach(place => {
 
     mainSection.appendChild(placeCard);
 });
+
+const message = document.querySelector("#welcoming");
+const lastVisited = localStorage.getItem("lastVisited");
+
+let now = Date.now();
+
+if (!lastVisited) {
+    message.innerHTML = "Welcome! Let us know if you have any questions.";
+}
+
+else {
+    const msToDays = 1000 * 60 * 60 * 24;
+    let days = Math.floor((now - lastVisited) / msToDays);
+
+    if (days < 1) {
+        message.innerHTML = "Back so soon! Awesome!";
+    }
+    else {
+        message.innerHTML = `You last visited ${days} days ago.`
+    }
+}
+
+localStorage.setItem("lastVisited", now);

@@ -214,3 +214,10 @@ h1{
 .placeCard img{
     margin: 0;
 }
+
+#welcoming{
+    text-align: center;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: larger;
+}

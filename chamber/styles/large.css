@@ -1,4 +1,4 @@
-*{
+:root{
     --primary: #00600D;
     --accent: #CED500;
     --text: #0C0040;
@@ -62,6 +62,13 @@
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .placeCard>figure:hover{
+        box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+        transform: scale(1.1);
+        transition: all 1s ease-out;
+    }
+
 }
 
 /******************************/
