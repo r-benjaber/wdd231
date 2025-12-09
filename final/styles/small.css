@@ -1,0 +1,359 @@
+/*-------------------------*/
+/*     GENERAL SETUP       */
+/*-------------------------*/
+:root{
+    --primary: #00eaff;
+    --secondary: #b400ff;
+    --background: #1B1E29;
+    --section: #262A38;
+    --text: #e8e8e8;
+    --shadow1: rgba(0, 238, 255, 0.4);
+    --shadow2: rgba(180, 0, 255, 0.4);
+}
+
+body{
+ background-color: var(--background);
+ color: var(--text);
+ font-family: "Roboto", sans-serif;
+ max-width: 600px;
+ margin: 0 auto;
+}
+
+h2, h1{
+    font-family: "Audiowide", sans-serif;
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--shadow1);
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    border-radius: 25px;
+    background-color: var(--section);
+    border: 2px solid var(--secondary);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px var(--shadow2);
+}
+
+
+/*-------------------------*/
+/*        HEADER           */
+/*-------------------------*/
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: solid 2px var(--secondary);
+    box-shadow: 10px var(--shadow2);
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.inheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.burger{
+    min-width: 48px;
+    min-height: 48px;
+    font-size: 24px;
+}
+
+.burger::after{
+    content: '\2630';
+}
+
+button{
+    cursor: pointer;
+    background-color: var(--background);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+}
+
+
+/*-------------------------*/
+/*       NAVIGATION        */
+/*-------------------------*/
+.navigation{
+    display: none;
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li {
+    padding: 0.25rem;
+    list-style: none;
+    color:var(--text);
+}
+
+.navigation a{
+    text-decoration: none;
+    color: var(--text);
+    border: none;
+}
+
+.navigation .current, .navigation a:hover{
+    color: var(--primary);
+    font-family: "Audiowide", sans-serif;
+}
+
+.burger.show::after {
+    content: "\00D7";
+}
+
+
+/*----------------------*/
+/*        FOOTER        */
+/*----------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid var(--secondary);
+    text-align: center;
+    box-shadow: 0 0 -10px 0 var(--shadow2);
+}
+
+footer p>a{
+    border: none;
+    text-decoration: underline;
+}
+
+/*----------------------*/
+/*         MAIN         */
+/*----------------------*/
+/*Hero*/
+#hero>img{
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+#hero{
+    text-align: center;
+}
+
+/*Trending*/
+#slideAni{
+    overflow: hidden;
+    position: relative;
+}
+#trending{
+    display: flex;
+    flex-direction: row;
+    animation: backAndForth 20s linear infinite alternate;
+}
+
+#trending>section{
+    flex:0 0 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#trendingGames{
+    border: none;
+    text-align: center;
+    background-color: var(--background);
+    box-shadow: none;
+
+    margin: 2rem auto;
+}
+@keyframes backAndForth{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-3300px);
+    }
+}
+
+#slideAni:hover #trending{
+    animation-play-state: paused;
+}
+
+#trending>section h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+#trending>section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none; 
+    z-index: 1;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+#trending>section:hover h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#trending>section:hover::after {
+    opacity: 1;
+}
+
+/*Join*/
+.homeComunity>img{
+    max-width: 300px;
+    border-radius: 15px;
+    margin: 0.5rem auto;
+}
+
+.homeComunity{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hero a, .homeComunity button, dialog a {
+    font-size: medium;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--text);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    margin: 0.5rem auto;
+    background-color: var(--section);
+}
+
+dialog > div {
+    margin: 0.5rem;
+}
+
+dialog{
+    background-color: var(--section);
+    border: 2px solid var(--secondary);
+    border-radius: 25px;
+    width: 250px;
+    height: 150px;
+}
+
+dialog > h3{
+    font-family: "Audiowave", sans-serif;
+    color: var(--primary);
+    text-shadow: 10px var(--shadow2);
+}
+
+::backdrop{
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+/*-------------------------*/
+/*        ALL GAMES        */
+/*-------------------------*/
+
+
+.gameCard {
+    width: 400px;
+    height: 350px;
+    padding: 0;
+    overflow: hidden;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "image image image"
+    "title title title"
+    "esrb . rating"
+    "genres genres .";
+}
+
+.gameImg{
+    grid-area: image;
+    max-height: 250px;
+    object-fit: cover;
+
+}
+
+.gameTitle{
+    grid-area: title;
+}
+
+.esrb{
+    grid-area: esrb;
+}
+
+.gameRating{
+    grid-area: rating;
+}
+
+.gameGenres{
+    grid-area: genres;
+}
+
+.gameCard h2, .gameCard p{
+    margin: 0.2rem;
+}
+
+/*----------------------*/
+/*       COMUNITY       */
+/*----------------------*/
+
+.topic{
+    font-family: "Audiowide", sans-serif;
+    color: var(--secondary);
+    margin-bottom: 5px;
+}
+
+.user{
+    font-style: italic;
+    font-size: smaller;
+    color: var(--primary);
+    margin-top: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--secondary);
+    border-radius: 25px;
+    box-shadow: 0 0 10px var(--shadow2);
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+form button{
+    margin: 0.5rem auto;
+}
+
+input, textarea{
+    background-color: var(--section);
+    color: var(--text);
+}

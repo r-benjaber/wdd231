@@ -1,0 +1,223 @@
+/*-------------------------*/
+/*      GENERAL SETUP      */
+/*-------------------------*/
+*{
+    --primary: #00600D;
+    --accent: #CED500;
+    --text: #0C0040;
+    --background: #EEFFDD;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--text);
+}
+
+/*-------------------------*/
+/*        HEADER           */
+/*-------------------------*/
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: solid 2px var(--primary);
+    width: 100%;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.inheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.burger{
+    min-width: 48px;
+    min-height: 48px;
+    font-size: 24px;
+}
+
+.burger::after{
+    content: '\2630';
+}
+
+button{
+    cursor: pointer;
+    background-color: var(--background);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+}
+
+
+/*-------------------------*/
+/*       NAVIGATION        */
+/*-------------------------*/
+.navigation{
+    display: none;
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li {
+    padding: 0.25rem;
+    list-style: none;
+    color:var(--text);
+}
+
+.navigation a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+.navigation .current, .navigation a:hover{
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.burger.show::after {
+    content: "\00D7";
+}
+
+/*-------------------------*/
+/*          MAIN           */
+/*-------------------------*/
+main{
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+/*------FOR DIRECTORY PAGE---------*/
+
+#businessCards{
+    display: flex;
+    flex-direction: column;
+}
+
+#businessCards > section {
+    border-bottom: 1px var(--primary) solid;
+    border-top: 1px var(--primary) solid;
+    padding: 1rem;
+    text-align: center;
+}
+
+#displayButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+table{
+    border: 1px solid var(--primary);
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table thead{
+
+    border-bottom: 2px solid var(--primary);
+    background-color: var(--background);
+
+}
+th, tr{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+tr:nth-child(odd){
+    background-color: var(--background);
+}
+
+tr:nth-child(even){
+    background-color: #ccddbc;
+}
+
+
+
+/*-------------------------*/
+/*         FOOTER          */
+/*-------------------------*/
+
+footer{
+    text-align: center;
+    border-top: var(--primary) 2px solid;
+    margin-top: 0.5rem;
+}
+
+footer a > img {
+    min-width: 44px;
+    margin: 0.5rem;
+}
+
+
+
+/********************/
+/****  DISCOVER  ****/
+/********************/
+
+.placeCard {
+    border: 2px solid var(--primary);
+    margin: 1rem;
+    border-radius: 15px;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "phot"
+    "desc"
+    "addr"
+    "butn";
+    text-align: center;
+    gap: 0.5rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.placeCard > h2 {
+    grid-area: name;
+}
+
+.placeCard > figure {
+    grid-area: phot;
+    padding: 0;
+    margin: 0;
+}
+
+.placeCard > p {
+    grid-area: desc;
+}   
+
+.placeCard > address {
+    grid-area: addr;
+}
+
+.placeCard > button{
+    grid-area: butn;
+    width: 100px;
+    margin: 10px auto;
+}
+
+.placeCard img{
+    margin: 0;
+}
+
+#welcoming{
+    text-align: center;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: larger;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Page Meta Setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Villa Elisa's Chamber of Commerce, find information about the city and companies around. Become a member of the Villa Elisa's Chamber and let people know about your buisness.">
+    <meta name="author" content="Benjamin Bernal">
+
+    <!-- Title and Icon -->
+    <title>Villa Elisa's Chamber Directory</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Social Media Meta Data -->
+    <meta property="og:title" content="Villa Elisa Chamber of Commerce">
+    <meta property="og:description" content="Welcome to the Villa Elisa's Chamber of Commerce, find information about the city and companies around">
+    <meta property="og:image" content="https://r-benjaber.github.io/wdd231/chamber/images/for-og-social-media.jpeg">
+    <meta property="og:url" content="https://r-benjaber.github.io/wdd231/chamber/index.html">
+
+    <!-- Stylesheet Linking -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- Font Setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Page Scripts -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="inheader">
+            <img src="images/logo.svg" alt="Logo of the chamber" width="1" height="1" class="logo">
+            <p>Villa Elisa's Chamber of Commerce</p>
+            <button class="burger"></button>
+        </div>
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="current">Join</a></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <main>
+        <h1></h1>
+        <form method="get" action="thankyou.html">
+            <label for="firstName">Your first name: </label>
+            <input type="text" name="firstName" id="firstName" title="Enter your first name here" autocomplete="given-name" required>
+            <label for="lastName">Your Last Name: </label>
+            <input type="text" name="lastName" id="lastName" title="Enter your last name here" autocomplete="family-name" required>
+            <label for="orgTitle">Your Organizational Title: </label>
+            <input type="text" name="orgTitle" id="orgTitle" title="Enter your organizational title" pattern="[A-Za-z\s\-]{7,}" autocomplete="organization-title" required>
+            <label for="email">Your Email: </label>
+            <input type="email" name="email" id="email" placeholder="example@email.com" title="Enter a valid email" autocomplete="email" required>
+            <label for="orgName">Your Organization's Name: </label>
+            <input type="text" name="orgName" id="orgName" title="The Organization name" autocomplete="organization" required>
+            <label for="level">Select your membership level: </label>
+            <select name="level" id="level">
+                <option value="Non Profit Organization">Non profit organization (Free, only for NPOs)</option>
+                <option value="Bronze" selected>Bronze Membership ($9.99/month)</option>
+                <option value="Silver">Silver Membership ($19.99/month)</option>
+                <option value="Gold">Gold Membership ($39.99/month)</option>
+            </select>
+            <label for="orgDescription">Description: </label>
+            <textarea name="orgDescription" id="orgDescription" placeholder="Write a short description of your organization (Max. 300)" pattern=".{,300}" rows="4"></textarea>
+            <input type="hidden" name="timeStamp" id="timeStamp">
+            <button type="submit">Join the Chamber!</button>
+        </form>
+
+        <aside>
+            <section class="levelCard" id="npo">
+                <h2>Non Profit Organization Level</h2>
+                <button id="openNPO">Learn More!</button>
+                <dialog id="npoCard">
+                    <h3>NPO Level Membership</h3>
+                    <p>With this organization level you get acces to every basic feature of the chamber, including participation in events, basic assesoring and a place in the website. <br>
+                    All for free only for registered Non Profit Organizations.</p>
+                    <button id="closeNPO">Close Info</button>
+                </dialog>
+            </section>
+            <section class="levelCard" id="bronze">
+                <h2>Bronze Level</h2>
+                <button id="openBronze">Learn More!</button>
+                <dialog id="bronzeCard">
+                    <h3>Bronze Level Membership</h3>
+                    <p>With this organization level you get acces to every basic feature of the chamber, including participation in events, basic assesoring and a place in the website. <br>
+                    All for just a monthly payment of $9.99, special for starting or small businesses</p>
+                    <button id="closeBronze">Close Info</button>
+                </dialog>
+            </section>
+            <section class="levelCard" id="silver">
+                <h2>Silver Level</h2>
+                <button id="openSilver">Learn More!</button>
+                <dialog id="silverCard">
+                    <h3>Silver Level Membership</h3>
+                    <p>With this organization level you get acces to every basic feature of the chamber, and some premium features as discounts, premium placement in the website and events with major participation possibilities. <br>
+                    All for a monthly payment of $19.99, designed for Medium businesses and successful stores.</p>
+                    <button id="closeSilver">Close Info</button>
+                </dialog>
+            </section>
+            <section class="levelCard" id="gold">
+                <h2>Gold Level</h2>
+                <button id="openGold">Learn More!</button>
+                <dialog id="goldCard">
+                    <h3>Gold Level Membership</h3>
+                    <p>The highest level of organization in the city, you will have VIP participation in events, having major advertisement during Events and being one of the first organization poeple will see in the website. <br>
+                    All for a monthly payment of $39.99, for big and multinational businesses.</p>
+                    <button id="closeGold">Close Info</button>
+                </dialog>                
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p class="info">
+            <strong>Villa Elisa's Chamber of Commerce</strong> <br>
+            Virgen del Carmen 247 <br>
+                c/ Von Poleski <br>
+            villaelisachamber@mef.gov.py
+            +595 21 112 8000
+        </p>
+        <div class="medialinks"><a href="https://www.youtube.com"><img src="images/youtube.svg" alt="youtube logo"></a><a href="https://www.x.com"><img src="images/twitter.svg" alt="twitter logo"></a><a href="https://linkedin.com"><img src="images/linkedin.svg" alt="linkedin logo"></a></div>
+        <div><p>©<span id="currentYear"></span> - Rodrigo Benjamin Bernal - Central, Paraguay</p>
+        <p id="lastModified"></p></div>
+    </footer>    
+</body>
+</html>

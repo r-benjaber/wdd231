@@ -1,0 +1,127 @@
+@media screen and (min-width: 38rem){
+    /*--------------GENERAL-------------*/
+    body{
+        max-width: 95vw;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .inheader{
+        display: flex;
+        justify-content: left;
+    }
+    .burger{
+        display: none;
+    }
+
+    .navigation{
+        display: block;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo{
+        margin: 0.5rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /*-----------HOME-----------*/
+    #hero{
+        display: grid;
+        grid-template-areas:
+        "pad title"
+        "pad parg"
+        "pad btn";
+        max-width: 1000px;
+        margin: 0.2rem auto;
+    }
+
+    #hero > img{
+        grid-area: pad;
+        width: 500px;
+    }
+
+    #hero > a{
+        grid-area: btn;
+        max-height: 20px;
+    }
+
+    #hero > p{
+        grid-area: parg;
+    }
+
+    #hero > h2{
+        grid-area: title;
+    }
+
+    @keyframes backAndForth{
+        0% {
+        transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-2000px);
+        }
+    }
+
+    .homeComunity{
+        display: grid;
+        grid-template-areas: 
+        "h girl girl"
+        "p girl girl"
+        "b girl girl";
+        max-width: 1000px;
+        margin: 0.2rem auto;
+    }
+
+    .homeComunity > img{
+        grid-area: girl;
+        width: 800px;
+    }
+
+    .homeComunity > h3{
+        grid-area: h;
+    }
+
+    .homeComunity > p{
+        grid-area: p;
+    }
+
+    .homeComunity > button{
+        grid-area: b;
+    }
+
+    /*----------------ALL GAMES-----------------*/
+    #games{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .gameCard, .gameImg{
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .gameImg{
+        object-position: top;
+    }
+
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+}

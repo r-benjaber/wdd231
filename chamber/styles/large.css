@@ -1,0 +1,83 @@
+:root{
+    --primary: #00600D;
+    --accent: #CED500;
+    --text: #0C0040;
+    --background: #EEFFDD;
+}
+
+
+@media screen and (min-width: 32rem){
+    main{
+        max-width: 80vw;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .inheader{
+        display: flex;
+        justify-content: left;
+    }
+    .burger{
+        display: none;
+    }
+
+    .navigation{
+        display: block;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*----------FOR DIRECTORY------------*/
+
+    #businessCards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 0.5rem;
+    }
+
+    #businessCards > section{
+        border: 2px solid var(--primary);
+    }
+
+    #businessCards > section img {
+        max-height: 200px;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+
+    /******************************/
+    /*FOOTER***********************/
+    /******************************/
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .placeCard>figure:hover{
+        box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+        transform: scale(1.1);
+        transition: all 1s ease-out;
+    }
+
+}
+
+/******************************/
+/********  DISCOVER  **********/
+/******************************/
+
+@media screen and (min-width: 64rem) {
+    #placesCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

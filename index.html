@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Section (and Title) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 Course Home Page - Benjamin Bernal</title>
+    <meta name="description"
+        content="This is the WDD231 Course Home Page where's a bit of information about me, the classes that I took and also links to other pages that I created.">
+    <meta name="author" content="Rodrigo Benjamin Bernal">
+
+    <!-- Social Media Meta Tags -->
+    <meta name="og:title" content="WDD231 Course Home Page">
+    <meta name="og:description"
+        content="This page contains the main links to project pages created in this course. It also have information about me and references to my social media.">
+    <meta name="og:url" content="https://r-benjaber.github.io/wdd231">
+    <meta name="locale" content="en_US">
+    <meta name="image" content="https://r-benjaber.github.io/wdd231/images/rb-logo.svg">
+
+
+    <!-- Linking the font that I will use -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Linking stylesheets and Icon -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Adding the script to the webpage -->
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- The header contains a Logo, my name and a button that will be used to show navigation menu when using small screens. -->
+        <img src="images/rb-logo.svg" alt="Home Page Logo" width="1" height="1">
+        <span>Rodrigo Bernal's Page</span>
+        <button class="hamburger"></button>
+    </header>
+    <!-- Navigation Menu -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1>Home</h1>
+
+        <!-- First Section that is a card that contains information about me. -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p class="content">My name is Rodrigo Benjamín Bernal Romero, I'm a 25yo Software Development student that
+                is currently
+                finishing the first certificate of the career. I've made quite some projects for this careers as an
+                Airport Traffic Manager app in Python, a Rafting Website, a Memorial Park Website, and a lot of small
+                projects. <br> Right now I'm working as a Memorial Park administrative, and do a lot of work to serve
+                others in the process of saying goodbye to their loved ones. I've worked as an Administrative Assistant
+                in the Civil Registry's Procurement Department. And also served as a full-time missionary in Santa Cruz,
+                Bolivia North Mission, I've been a member of the Churh of Jesus Christh of Latter-day Saints almost my
+                whole life and that's something that I love and am grateful for. <br> The things that I like to do is
+                playing videogames, learn a lot about science and technology, watching movies and series or read a good
+                comic, and spend time with people I love.</p>
+        </section>
+
+        <!-- Second Section that have my own photo. -->
+        <section id="myPicture">
+            <h2>Student Photo</h2>
+            <div class="content">
+                <img src="images/myself.webp" alt="A picture of myself">
+            </div>
+        </section>
+
+        <!-- Third section with info about taken courses. -->
+        <section id="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="content">
+
+                <div id="coursesBtn"><button id="all">All</button><button id="cse">CSE</button><button
+                        id="wdd">WDD</button></div>
+                <p>Listed courses for the amount of credits of <span id="credits"></span></p>
+
+                <!-- This part will be completed using JavaScript. -->
+                <div id="courseList"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--- Footer, most of it will be filled up using JavaScript. -->
+    <footer>
+        <div class="footerNav"><a href="https://www.linkedin.com/in/benjam%C3%ADn-bernal-b64b49238/"><img
+                    src="images/linkedin.svg" alt="LinkedIn Link"></a> <a href="https://github.com/r-benjaber"><img
+                    src="images/github.svg" alt="GitHub Link"></a> <a href="https://www.instagram.com/rbenjaber/"><img
+                    src="images/instagram.svg" alt="Instagram link"></a></div>
+        <p>©<span id="currentYear"></span> - Rodrigo Benjamin Bernal - Central, Paraguay</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

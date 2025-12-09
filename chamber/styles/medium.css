@@ -1,0 +1,11 @@
+@media screen and (min-width: 38rem) {
+    .placeCard {
+        grid-template-areas: 
+        "phot name"
+        "phot desc"
+        "phot addr"
+        "butn butn";
+        text-align: left;
+        overflow: hidden;
+    }
+}

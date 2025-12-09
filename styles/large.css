@@ -1,0 +1,85 @@
+@media screen and (min-width: 32rem)
+{
+    *{
+        max-width: 100%;
+    }
+
+    /*////////////////////////////////
+    //           HEADER             //
+    ////////////////////////////////*/
+    .hamburger{
+        display: none;
+    }
+
+    .navigation{
+        display: block;
+        width: 100%;
+    }
+    .navigation ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .navigation li{
+        width: 100%;
+        text-align: center;
+    }
+
+    /*////////////////////////////////////
+    //              MAIN               ///
+    ////////////////////////////////////*/
+    main{
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+        grid-template-rows: 50px 450px 220px;
+        align-items: stretch;
+    }
+
+    h1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #about{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #about .content{
+        height: 80%;
+    }
+
+    #myPicture{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 100%;
+    }
+
+    #courses{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #courses .content{
+        height: 60%;
+    }
+
+    #courses p{
+        text-align: center;
+    }
+
+    #courseList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    footer{
+        margin-top: 0.5rem;
+    }
+}

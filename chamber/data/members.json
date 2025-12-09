@@ -1,0 +1,65 @@
+{
+    "companies":[
+    {
+        "name": "UltraAçai",
+        "address": "Avda Americo Picco a/ 16 of July",
+        "phonenumber": "021 121313221",
+        "url": "https://ultracai.com.py/",
+        "imageurl": "https://ultracai.com.py/wp-content/uploads/2023/09/UltraAcai-Logotipo-2022_3-e1748003146507.png",
+        "memlevel": 2
+    },
+
+    {
+        "name": "Eco Cosmetiscos",
+        "address": "Avda. Von Polesky a/ Hungary",
+        "phonenumber": "0972 673 836",
+        "url": "https://www.facebook.com/PequeLuisRia",
+        "imageurl": "https://instagram.fasu11-2.fna.fbcdn.net/v/t51.2885-19/465423148_904640687901093_2171159649416433571_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fasu11-2.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2QHAV00iNxfZaermWcMjfVv6BWfm75bSgyR5BGeWnWAdrzR-4aRh4aWcpjFIrQrRPNU9BX5Gg09xQfni7C5GsZUN&_nc_ohc=gC1mjTAdpbQQ7kNvwEgXmJ2&_nc_gid=-ktVJjBalyLKRiXMOyX6BQ&edm=APoiHPcBAAAA&ccb=7-5&oh=00_AfgkcUhHxVkIcN9YecrY-JeFEOynow2qlcwSBw__wQqA1A&oe=691AC36A&_nc_sid=22de04",
+        "memlevel": 2
+    },
+
+    {
+        "name": "Roberto Motors",
+        "address": "Nuestra Señora de la Asuncion 2113",
+        "phonenumber": "0997 124 781",
+        "url": "http://www.compraunautoayer.com.py",
+        "imageurl": "https://mir-s3-cdn-cf.behance.net/projects/404/dda19e181250641.Y3JvcCwxNTAwLDExNzMsMCwxNjM.png",
+        "memlevel": 3
+    },
+
+    {
+        "name": "Homero Shop",
+        "address": "Americo Pico 787",
+        "phonenumber": "+595 977 444555",
+        "url": "http://www.instagram.com/homershoppy",
+        "imageurl": "https://images.seeklogo.com/logo-png/47/1/homero-simpson-logo-png_seeklogo-470698.png",
+        "memlevel": 1
+    },
+
+    {
+        "name": "Parque Serenidad",
+        "address": "Americo Pico 4300",
+        "phonenumber": "+595 21 216 0000",
+        "url": "http://www.parqueserenidad.com",
+        "imageurl": "https://www.parqueserenidad.com/imagenes/iconos/logo-pie.png",
+        "memlevel": 3
+    },
+
+    {
+        "name": "Petropar",
+        "address": "",
+        "phonenumber": "",
+        "url": "https://www.petropar.gov.py/",
+        "imageurl": "https://www.petropar.gov.py/wp-content/uploads/2021/01/new-petropar.jpg",
+        "memlevel": 3
+    },
+
+    {
+        "name": "Colegio Cerritos",
+        "address": "Avda. Von Poleski 2610",
+        "phonenumber": "0986 350 660",
+        "url": "https://cerritos.edu.py/",
+        "imageurl": "https://cerritos.edu.py/img/logo.png",
+        "memlevel": 3
+    }]
+}
